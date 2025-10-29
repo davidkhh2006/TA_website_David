@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .paragraf {
+            width: 100px;
+            height: 50%;
+            background-color: rgba(0, 0, 0, 0.416);
+        }
+      .box1 {
+        height: 200px;
+        width: 200px;
+        background-color: aqua;
+      }
+
+      .box2 {
+        height: 200px;
+        width: 200px;
+        background-color: rgb(255, 0, 0);
+      }
+
+      .box3 {
+        height: 200px;
+        width: 200px;
+        background-color: rgb(51, 0, 255);
+      }
+
+      .container {
+        display: flex;
+        gap: 20px;
+        background-color: rgba(255, 255, 0, 0.733);
+      }
+
+      .grid-container {
+        padding: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: rgb(205, 210, 255);
+        gap: 20px;
+      }
+
+      .grid-container div {
+        padding: 20px;
+        color: aqua;
+        background: red;
+        text-align: center;
+        font-family: sans-serif;
+        gap: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+      <div class="container">
+          <div class="box1"></div>
+          <div class="box2"></div>
+          <div class="box3"></div>
+        </div>
+        
+        <div class="grid-container">
+            <div>david kurniawan</div>
+            <div>box2</div>
+            <div>box3</div>
+            <div>box4</div>
+            <div>box5</div>
+            <div>box6</div>
+        </div>
+        
+        <div>
+            <div class="box1">box10</div>
+            <div class="box3">box11</div>
+        </div>
+        <script></script>
+        <h1 class="paragraf">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est esse non
+          magni, doloribus mollitia odio hic sunt, perspiciatis dolor rem ut aut
+          magnam quo harum natus aspernatur unde maxime temporibus?
+        </h1>
+    </body>
+</html>
