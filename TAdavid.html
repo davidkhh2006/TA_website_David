@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TA BTNG DAVID KURNIAWAN HANDOKO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gradient-to-r from-red-500 to-blue-500 min-h-screen text-white font-sans"
+  >
+    <nav class="flex justify-between items-center p-5 bg-gradient-to-r from-red-500 to-blue-500 text-white">
+  <!-- Logo -->
+  <h1 class="text-2xl font-bold">DavidKH</h1>
+
+  <!-- Tombol ☰ (hanya muncul di layar kecil) -->
+  <button id="menu-btn" class="text-3xl md:hidden focus:outline-none">
+    ☰
+  </button>
+
+  <!-- Menu Navigasi -->
+  <ul
+  id="menu"
+  class="hidden md:flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0 text-lg text-center"
+>
+  <li><a href="#home" class="block px-4 py-4 hover:underline">Home</a></li>
+  <li><a href="#portfolio" class="block px-4 py-2 hover:underline">Profile</a></li>
+  <li><a href="#contact" class="block px-4 py-2 hover:underline">Kontak</a></li>
+</ul>
+
+</nav>
+
+<!-- Script JS -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden'); // tampilkan/sembunyikan
+    menu.classList.toggle('flex'); // ubah jadi flex agar rapi
+    menu.classList.toggle('flex-col'); // susun vertikal di HP
+    menu.classList.toggle('absolute');
+    menu.classList.toggle('top-16');
+    menu.classList.toggle('right-5');
+    menu.classList.toggle('bg-white/20');
+    menu.classList.toggle('backdrop-blur-md');
+    menu.classList.toggle('rounded-xl');
+    menu.classList.toggle('p-4');
+  });
+</script>
+
+  </div>
+</nav>
+  <!-- Hero Section -->
+    <section
+      id="hero"
+      class="flex flex-col md:flex-row items-center justify-center text-center md:text-left px-10 py-20"
+    >
+      <div class="md:w-1/2 space-y-6">
+  <h2 class="text-4xl md:text-5xl text-blue-700 font-extrabold">
+    Haiii, Saya
+    <span class="text-yellow-200 font-extrabold">David Kurniawan Handoko</span>
+  </h2>
+  <p class="text-lg text-green-600 font-bold">
+    Mahasiswa Sistem Informasi yang sedang belajar HTML melalui BTNG.
+  </p>
+  <a
+    href="#portfolio"
+    class="mt-6 inline-block bg-white text-red-700 px-5 py-2 rounded-full font-semibold hover:bg-yellow-200 transition"
+  >
+    Lihat Profile Saya
+  </a>
+  <a
+    href="#contact"
+    class="mt-6 inline-block bg-white text-red-700 px-5 py-2 rounded-full font-semibold hover:bg-yellow-200 transition"
+  >
+    Hubungin Saya
+  </a>
+</div>
+
+      </div>
+      <div class="md:w-1/2 mt-10 md:mt-0">
+        <img
+          src="WhatsApp Image 2025-10-28 at 13.57.49_78811e8c.jpg"
+          alt="Ilustrasi Hero"
+          class="w-72 mx-auto drop-shadow-2xl rounded-full"
+        />
+      </div>
+    </section>
+<!-- PROFILE SAYA -->
+    <section
+      id="portfolio"
+      class="px-10 py-20 bg-white bg-gradient-to-r from-red-500 to-blue-500 rounded-t-3xl"
+    >
+      <h3 class="text-3xl font-bold text-center mb-10">Profile Saya</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+<!-- PROFILE SAYA -->
+        <div
+          class="bg-gray-100 rounded-2xl shadow p-5 hover:scale-105 transition text-gray-800"
+        >
+          <img
+            src="WhatsApp Image 2025-10-28 at 14.40.24_c48cbbf6.jpg"
+            alt="Project 1"
+            class="rounded-xl mb-3"
+          />
+          <h4 class="font-bold">Project 1</h4>
+          <p>Saya David saya orang nya sedikit pendiam tapi kalau sudah cocok saya orang nya periang dan susah untuk diam</p>
+        </div>
+        <div
+          class="bg-gray-100 rounded-2xl shadow p-5 hover:scale-105 transition text-gray-800"
+        >
+          <img
+            src="WhatsApp Image 2025-10-28 at 15.16.25_63d71223.jpg"
+            alt="Project 2"
+            class="rounded-xl mb-3"
+          />
+          <h4 class="font-bold">Hobby Saya </h4>
+          <p>Hobby saya yaitu eksplor di berbagai macam alam mau darat atau air saya suka semua seperti di bukit atau pantai serta air terjun</p>
+        </div>
+        <div
+          class="bg-gray-100 rounded-2xl shadow p-5 hover:scale-105 transition text-gray-800"
+        >
+          <img
+            src="WhatsApp Image 2025-10-28 at 14.42.50_7bb3d52d.jpg "
+            alt="Project 3"
+            class="rounded-xl mb-3"
+          />
+          <h4 class="font-bold">Tempat Favorite </h4>
+          <p>Tempat favorite saya yaitu di pantai atau tempat yang berbau air, saya suka karena bisa rileks, adem dan nyaman</p>
+        </div>
+        <div
+          class="bg-gray-100 rounded-2xl shadow p-5 hover:scale-105 transition text-gray-800"
+        >
+          <img
+            src="WhatsApp Image 2025-10-28 at 15.10.12_ebbdde4d.jpg"
+            alt="Project 4"
+            class="rounded-xl mb-3"
+          />
+          <h4 class="font-bold">Teman Sekelas</h4>
+          <p>Gambar ini adalah teman sekelas saya di sistem informasi dimana orang nya baik dan ramah semua</p>
+        </div>
+        <div
+          class="bg-gray-100 rounded-2xl shadow p-5 hover:scale-105 transition text-gray-800"
+        >
+          <img
+            src="WhatsApp Image 2025-10-28 at 15.15.13_1b63f3b9.jpg"
+            alt="Project 5"
+            class="rounded-xl mb-3"
+          />
+          <h4 class="font-bold">Makanan Favorite</h4>
+          <p>Makanan favorite saya yaitu nasi Padang dimana rasa kuah yang berbagai macam dan porsi banyak yang membuat kenyang</p>
+        </div>
+      </div>
+    </section>
+<!-- HUBUNGI SAYA  -->
+    <section id="contact"
+     class="px-10 py-20 bg-gradient-to-r from-red-500 to-blue-500 text-gray-900">
+      <h3 class="text-3xl font-bold text-center mb-8">Kontak Saya</h3>
+      <form class="max-w-xl mx-auto space-y-4">
+        <input
+          type="text"
+          placeholder="Nama Anda"
+          class="w-full p-3 rounded-xl border border-gray-500"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Email Anda"
+          class="w-full p-3 rounded-xl border border-gray-500"
+          required
+        />
+        <textarea
+          placeholder="Pesan Anda"
+          class="w-full p-3 rounded-xl border border-gray-500"
+          rows="5"
+          required
+        ></textarea>
+        <button
+          type="submit"
+          class="bg-red-900 text-white px-6 py-3 rounded-full font-semibold hover:bg-red-500 transition"
+        >
+          Kirim Pesan
+        </button>
+      </form>
+    </section>
+<!-- Footer -->
+    <footer class="text-center p-5 bg-gradient-to-r from-red-700 to-blue-600 text-white">
+      <p>
+        &copy; 2025 David Kurniawan Handoko. Dibuat untuk Tugas Akhir BTNG Web.
+      </p>
+    </footer>
+
+
+  </body>
+</html>
